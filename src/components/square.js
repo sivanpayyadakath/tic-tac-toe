@@ -1,21 +1,12 @@
-import React, {Component} from 'react';
+import React from 'react'
 
-class Square extends Component{
-    
-    constructor(props){
-        super(props);
-        this.state = {
-            value: null,
-        };
-    }
-
-    render(){
-        return(
-            <button className="square">
-                {this.props.value}
+function Square(props) {
+            
+   return(
+    <button className="square" onClick={props.onClick}>
+                {props.value}
             </button>
-        )
-    }
+        );
 }
 
 
